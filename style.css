@@ -1,3 +1,10 @@
+/* vars */
+
+:root {
+  --clr-cta-btn: #0a033d;
+}
+
+/* reset */
 *,
 *:before,
 *::after {
@@ -32,6 +39,12 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* navbar */
 
 .navbar {
@@ -40,10 +53,21 @@ a {
   align-items: center;
 
   min-height: 10dvh;
+}
 
-  border: 1px solid #ff0000;
+.navbar .navbar__logo {
+  font-weight: lighter;
+  text-transform: lowercase;
 }
 
 .navbar .navbar__links {
   display: flex;
+  gap: 2rem;
+}
+
+.navbar .btn__cta {
+  color: #fff;
+  background: var(--clr-cta-btn);
+  padding: 1rem 2.75rem;
+  border-radius: 3rem;
 }
