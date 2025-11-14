@@ -1,0 +1,49 @@
+*,
+*:before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* utility classes */
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 10dvh;
+
+  border: 1px solid #ff0000;
+}
+
+.navbar .navbar__links {
+  display: flex;
+}
